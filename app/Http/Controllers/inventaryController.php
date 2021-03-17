@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 
-class inventaryController extends Controller
+use App\Models\Inventary;
+
+class InventaryController extends Controller
 {
     /**
      * Display a listing of the resource.

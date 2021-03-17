@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\gallery;
 use Illuminate\Http\Request;
+
+use App\Models\Gallery;
 
 class GalleryController extends Controller
 {

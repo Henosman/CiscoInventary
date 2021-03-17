@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', 'studentsController@index');
+Route::get('/', 'DeveloperController@index');
 
-Route::get('/inventary', 'inventaryController@index');
-Route::get('/channels', 'ChannelsController@index');
-Route::get('/loans', 'LoansController@index');
-Route::get('/charts', 'ChartsController@index');
-Route::get('/gallery', 'GalleryController@index');
+Route::get('/Inventary', 'InventaryController@index');
+Route::get('/Channels', 'ChannelsController@index');
+Route::get('/Loans', 'LoanController@index');
+Route::get('/Charts', 'ChartsController@index');
+Route::get('/Gallery', 'GalleryController@index');

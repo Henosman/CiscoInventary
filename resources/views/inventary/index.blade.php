@@ -3,6 +3,9 @@
 @section('content')
  <!-- Static Table Start -->
  
+
+
+ 
 <div class="all-content-wrapper">
  <div class="data-table-area mg-b-15">
     <div class="container-fluid">
@@ -12,6 +15,20 @@
                     <div class="sparkline13-hd">
                        <div class="main-sparkline13-hd">
                             <h1>Projects <span class="table-project-n">Data</span> Table</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="sparkline11-list responsive-mg-b-30">
+                            <div class="sparkline11-hd">
+                                <div class="main-sparkline11-hd">
+                                   
+                                    <div class="modal-bootstrap modal-login-form">
+                                                <a class="zoomInDown mg-t" href="#" data-toggle="modal" data-target="#zoomInDown1">Modal Test</a>
+                                            </div>
+                                </div>
+                            </div>
+
+                            
                         </div>
                     </div>
                     <div class="sparkline13-graph">
@@ -235,5 +252,86 @@
         </div>
     </div>
 </div>
+
+<!-- modal -->
+
+<div class="sparkline11-graph">
+   <div class="basic-login-form-ad">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="zoomInDown1" class="modal modal-edu-general modal-zoomInDown fade" role="dialog">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-close-area modal-close-df">
+                        <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
+                     </div>
+                     <div class="modal-body">
+                        <div class="modal-login-form-inner">
+                           <div class="row">
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div class="login-social-inner">
+                                    <a href="#" class="button btn-social facebook span-left"> <span><i class="fa fa-facebook"></i></span> Facebook </a>
+                                    <a href="#" class="button btn-social twitter span-left"> <span><i class="fa fa-twitter"></i></span> Twitter </a>
+                                    <a href="#" class="button btn-social googleplus span-left"> <span><i class="fa fa-google-plus"></i></span> Google+ </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div class="basic-login-inner modal-basic-inner">
+                                    <h3>Sign In</h3>
+                                    <p>Register User can get sign in from here</p>
+                                    <form action="#">
+                                       <div class="form-group-inner">
+                                          <div class="row">
+                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <label class="login2">Email</label>
+                                             </div>
+                                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                <input type="email" class="form-control" placeholder="Enter Email" />
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="form-group-inner">
+                                          <div class="row">
+                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <label class="login2">Password</label>
+                                             </div>
+                                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                <input type="password" class="form-control" placeholder="password" />
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="login-btn-inner">
+                                          <div class="row">
+                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
+                                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                <label>
+                                                <input type="checkbox" class="i-checks"> Remember me </label>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
+                                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                <div class="login-horizental">
+                                                   <button class="btn btn-sm btn-primary login-submit-cs" type="submit">Sign In</button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
 
 @endsection

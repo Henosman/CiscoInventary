@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 
-class LoansController extends Controller
+use App\Models\Developer;
+
+class DeveloperController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class LoansController extends Controller
      */
     public function index()
     {
-        return view('loans.index');
+        return view('developers.index');
     }
 
     /**

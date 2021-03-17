@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Chart;
 use Illuminate\Http\Request;
+
+use App\Models\Chart;
 
 class ChartsController extends Controller
 {
