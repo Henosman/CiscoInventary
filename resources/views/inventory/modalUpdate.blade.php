@@ -98,7 +98,7 @@
                                                       <div class="row">
                                                          <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12">
                                                          <label class="login2">State</label>
-                                                            <input type="text" class="form-control" name="" id=""  value="{{ $inventory->state }}" readonly>
+                                                            <input type="text" class="form-control" name="state" id="state"  value="{{ $inventory->state }}" readonly>
                                                          </div>
                                                          <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12">
                                                             <label class="login2">Product</label>
@@ -123,6 +123,9 @@
                                                          <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12">
                                                             <label class="login2">Code</label>
                                                             <input type="text" class="form-control" name="code" id="code" value="{{ $inventory->code }}"/>
+                                                         </div>
+                                                         <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="hidden" class="form-control" name="channel" id="channel" value="{{ $inventory->channel }}"/>
                                                          </div>
                                                    </div>
                                                    <div class="form-group-inner">

@@ -4810,14 +4810,10 @@ div#sparklinehome canvas {
 
 .formulario {
    display: grid; 
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr ;
    gap: 20px;
 }
-.formulario2 {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
- }
+
 
 .formulario__label {
     display: block;
@@ -4866,12 +4862,12 @@ div#sparklinehome canvas {
     opacity: 0;
 }
 
-.formulario__mensaje, .formulario__grupo-btn-enviar, .formulario__mensajes {
+.formulario__mensaje, .formulario__grupo-btn-enviar {
     grid-column: span 2;
     
 }
 
-.formulario__mensaje, .formulario__mensajes {
+.formulario__mensaje {
     height: 45px;
     line-height: 45px;
     background: #F66060;
@@ -4884,7 +4880,7 @@ div#sparklinehome canvas {
     display: block;
 }
 
-.formulario__mensaje p, .formulario__mensajes p {
+.formulario__mensaje p {
     margin: 0;
 }
 

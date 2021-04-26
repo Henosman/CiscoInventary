@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Inventory;
 use App\Channel;
+use App\Loan;
 use DB;
 
 
@@ -38,8 +39,7 @@ class InventoryController extends Controller
             ['section' => $data['section'], 'position' => 
             $data['position'], 'state' => $data['state'], 'product' => $data['product'], 'pdrpid' => 
             $data['pdrpid'], 'serial' => $data['serial'], 'code' => 
-            $data['code'] , 'channel' => 
-            $data['channel'], 'observation' => $data['observation']]
+            $data['code'] , 'channel' =>$data['channel'], 'observation' => $data['observation']]
         ]);
 
         return redirect('/Inventory')->with('success','Data saved');
@@ -102,6 +102,7 @@ class InventoryController extends Controller
 
     public function updateAfterLoan(array $data, $id=null)
     {
+        //'loancode', 'pdrp_id', 'serial', 'channel', 'idinventary', 'estimateddate', 'realreturn', 'dateloan', 'state', 'pastdays', 'observation'
         
         $loanInventory = DB::table('inventory')
         ->where('id', $id)

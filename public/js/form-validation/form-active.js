@@ -424,9 +424,9 @@
  
 })(jQuery);
 
-const formulario=document.getElementById('formulario-invet');
-const inputs= document.querySelectorAll('#formulario-invet input');
-const textareas= document.querySelectorAll('#formulario-invet textarea');
+const formulario=document.getElementById('formulario');
+const inputs= document.querySelectorAll('#formulario input');
+const textareas= document.querySelectorAll('#formulario textarea');
 const expresiones = {
 	position: /^[a-zA-Z0-9\_\-]{1,16}$/, // Letras, numeros, guion y guion_bajo
 	product: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -516,7 +516,7 @@ formulario.addEventListener('submit', (e) => {
 	
 
 	if (campos.position && campos.product && campos.pdrpid && campos.serial && campos.code && campos.observation ) {
-		formulario.reset();
+		
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 		e.preventDefault();
